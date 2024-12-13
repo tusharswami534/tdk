@@ -38,14 +38,17 @@ import { SearchIcon } from '../utils/icons'
             <div className="w-full bg-congress-blue">
               <img className='max-w-[1009px] w-full mx-auto max-lg:hidden' src="./assets/images/webp/header-top-layer.webp" alt="top layer" />
               </div>
-              <div className={`flex justify-between max-w-[1183px] max-xl:px-7 max-lg:py-3 max-lg:items-center max-md:px-4 mr-custom-8 ml-auto`}>
+              <div className={`flex justify-between max-w-[1183px] max-xl:px-7 max-lg:pt-3 max-lg:pb-2.5 max-lg:items-center max-md:px-4 mr-custom-8 max-lg:mr-0 ml-auto`}>
                 <a href="/" className='text-white max-lg:flex hidden leading-110 text-custom-sm'>
-                <img className='max-w-[80px]' src="./assets/images/webp/logo.webp" alt="logo" />
+                <img className='max-w-[80px] max-sm:max-h-[20px]' src="./assets/images/webp/logo.webp" alt="logo" />
                 </a>
-                <div onClick={handleOpen} className='hidden gap-1 relative z-10 overflow-hidden cursor-pointer max-lg:flex size-4 flex-col'>
+                <div onClick={handleOpen} className=' text-white flex flex-col justify-center items-center'>
+                <div  className='hidden gap-1 relative z-10 overflow-hidden cursor-pointer max-lg:flex size-4 flex-col'>
                     <div className={`flex w-4 h-0.5 bg-white transition-all duration-300 ${open === true ? 'translate-x-10' : ''}`}></div>
                     <div className={`flex w-4 h-0.5 bg-white relative after:absolute after:w-4 after:h-0.5 after:bg-white after:top-0 after:transition-all after:duration-300 after:left-0 transition-all duration-300   ${open === true ? 'rotate-45 after:rotate-90' : ''}`}></div>
                     <div className={`flex w-4 h-0.5 bg-white transition-all duration-300 ${open === true ? '-translate-x-10' : ''}`}></div>
+                </div>
+                <p className='text-[10px] text-white relative z-10'>MENU</p>
                 </div>
                 <div className={`flex items-end gap-9 pt-11 pb-custom-3 max-lg:fixed max-lg:left-1/2 max-lg:top-1/2 max-lg:-translate-x-1/2 max-lg:-translate-y-1/2 max-lg:w-0 max-lg:overflow-hidden max-lg:h-0 max-lg:transition-all max-lg:duration-300 max-lg:flex-col max-lg:bg-black max-lg:justify-center max-lg:items-center ${open === true ? 'max-lg:w-[100%] max-lg:h-[100%]' : ''}`}>
                     {HEADER_LIST.map((item , index) => (

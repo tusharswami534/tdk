@@ -25,6 +25,8 @@ module.exports = {
           'custom-16' : '68px',
           '59px' : '59px',
           '57px' : '57px',
+          '42px' : '42px',
+          '44px' : '44px',
         },
         lineHeight: {
           '110' : '110%',
