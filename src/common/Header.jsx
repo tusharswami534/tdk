@@ -43,8 +43,8 @@ import { SearchIcon } from '../utils/icons'
                 <a href="/" className='text-white max-lg:flex hidden leading-110 text-custom-sm'>
                 <img className='max-w-[80px] max-sm:max-h-[20px]' src="./assets/images/webp/logo.webp" alt="logo" />
                 </a>
-                <div onClick={handleOpen} className=' text-white flex flex-col justify-center items-center'>
-                <div  className='hidden gap-1 relative z-10 overflow-hidden cursor-pointer max-lg:flex size-4 flex-col'>
+                <div onClick={handleOpen} className=' text-white  hidden max-lg:flex flex-col justify-center items-center'>
+                <div  className=' gap-1 relative z-10 overflow-hidden cursor-pointer  size-4 flex-col'>
                     <div className={`flex w-4 h-0.5 bg-white transition-all duration-300 ${open === true ? 'translate-x-10' : ''}`}></div>
                     <div className={`flex w-4 h-0.5 bg-white relative after:absolute after:w-4 after:h-0.5 after:bg-white after:top-0 after:transition-all after:duration-300 after:left-0 transition-all duration-300   ${open === true ? 'rotate-45 after:rotate-90' : ''}`}></div>
                     <div className={`flex w-4 h-0.5 bg-white transition-all duration-300 ${open === true ? '-translate-x-10' : ''}`}></div>
