@@ -20,8 +20,11 @@ module.exports = {
         },
         padding: {
           'custom-3' : '13px',
+          'custom-10' : '39px',
           'custom-15' : '63px',
           'custom-16' : '68px',
+          '59px' : '59px',
+          '57px' : '57px',
         },
         lineHeight: {
           '110' : '110%',
@@ -29,6 +32,7 @@ module.exports = {
         },
         fontSize: {
           'custom-sm' : '13px',
+          'custom-2xl' : '22px',
           'custom-3xl' : '30px',
           'custom-6xl' : '61px'
         },

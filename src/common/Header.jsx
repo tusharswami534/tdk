@@ -21,11 +21,9 @@ import { SearchIcon } from '../utils/icons'
               window.removeEventListener("resize", handleOverflow);
           };
       }, [open]);
-      // link to close tab 
       const handleClose = () => {
         setOpen(false)
       }
-      // Search Icon 
       const [search , setSearch] = useState(false)
       const handleSearch = () => {
         setSearch(!search)
@@ -34,14 +32,13 @@ import { SearchIcon } from '../utils/icons'
       const offSearch = () =>{
         setSearch(false)
       }
-    
-      
+
       return (
         <div className='bg-tory-blue relative'>
             <div className="w-full bg-congress-blue">
-              <img className='max-w-[994px] w-full mx-auto max-lg:hidden' src="./assets/images/webp/header-top-layer.webp" alt="top layer" />
+              <img className='max-w-[1009px] w-full mx-auto max-lg:hidden' src="./assets/images/webp/header-top-layer.webp" alt="top layer" />
               </div>
-              <div className={`flex justify-between max-w-[1140px] max-xl:px-7 max-lg:py-3 max-lg:items-center max-md:px-4 mr-custom-8 ml-auto`}>
+              <div className={`flex justify-between max-w-[1183px] max-xl:px-7 max-lg:py-3 max-lg:items-center max-md:px-4 mr-custom-8 ml-auto`}>
                 <a href="/" className='text-white max-lg:flex hidden leading-110 text-custom-sm'>
                 <img className='max-w-[80px]' src="./assets/images/webp/logo.webp" alt="logo" />
                 </a>
@@ -58,7 +55,7 @@ import { SearchIcon } from '../utils/icons'
                     <SearchIcon/>
                   </button>
                 </div>
-                <form className='max-w-[257px] w-full max-lg:hidden border-white max-h-[31px] items-center flex border mt-11 mb-custom-3 pr-3.5 border-solid rounded-custom-1'>
+                <form className='max-w-[257px] w-full max-lg:hidden border-white max-h-[31px] items-center flex border mt-[27px] mb-4 pr-3.5 border-solid rounded-custom-1'>
                   <input placeholder='Search by Keyword' required className='bg-transparent text-white py-2 px-3.5 placeholder:text-white outline-none w-[90%] ' type="text"  />
                   <button className='search-icon transition-all duration-300' type='submit'>
                     <SearchIcon/>

@@ -17,7 +17,7 @@ const TdkSlider = () => {
                     delay: 1000,
                     disableOnInteraction: true,
                 }}
-
+                loop={true}
                 centeredSlides={true}
                 modules={[Scrollbar, Autoplay]}
                 className="mySwiper"
