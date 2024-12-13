@@ -24,6 +24,7 @@ import { SearchIcon } from '../utils/icons'
       const handleClose = () => {
         setOpen(false)
       }
+
       const [search , setSearch] = useState(false)
       const handleSearch = () => {
         setSearch(!search)
@@ -45,15 +46,15 @@ import { SearchIcon } from '../utils/icons'
                 <a href="/" className='text-white max-lg:flex hidden leading-110 text-custom-sm'>
                 <img className='max-w-[80px] max-sm:max-h-[20px]' src="./assets/images/webp/logo.webp" alt="logo" />
                 </a>
-                <div onClick={handleOpen} className=' text-white  hidden max-lg:flex flex-col justify-center items-center'>
-                <div  className=' gap-1 relative z-10 overflow-hidden cursor-pointer flex size-4 flex-col'>
+                <div onClick={handleOpen} className=' text-white hidden max-lg:flex flex-col justify-center items-center'>
+                <div  className=' gap-1 relative z-50 overflow-hidden cursor-pointer flex size-4 flex-col'>
                     <div className={`flex w-4 h-0.5 bg-white transition-all duration-300 ${open === true ? 'translate-x-10' : ''}`}></div>
                     <div className={`flex w-4 h-0.5 bg-white relative after:absolute after:w-4 after:h-0.5 after:bg-white after:top-0 after:transition-all after:duration-300 after:left-0 transition-all duration-300   ${open === true ? 'rotate-45 after:rotate-90' : ''}`}></div>
                     <div className={`flex w-4 h-0.5 bg-white transition-all duration-300 ${open === true ? '-translate-x-10' : ''}`}></div>
                 </div>
-                <p className='text-[10px] text-white relative z-10'>MENU</p>
+                <p className='text-[10px] text-white relative z-50'>MENU</p>
                 </div>
-                <div className={`flex items-end gap-9 pt-11 pb-custom-3 max-lg:fixed max-lg:left-1/2 max-lg:top-1/2 max-lg:-translate-x-1/2 max-lg:-translate-y-1/2 max-lg:w-0 max-lg:overflow-hidden max-lg:h-0 max-lg:transition-all max-lg:duration-300 max-lg:flex-col max-lg:bg-black max-lg:justify-center max-lg:items-center ${open === true ? 'max-lg:w-[100%] max-lg:h-[100%]' : ''}`}>
+                <div className={`flex items-end gap-9 z-40 pt-11 pb-custom-3 max-lg:fixed max-lg:left-1/2 max-lg:top-1/2 max-lg:-translate-x-1/2 max-lg:-translate-y-1/2 max-lg:w-0 max-lg:overflow-hidden max-lg:h-0 max-lg:transition-all max-lg:duration-300 max-lg:flex-col max-lg:bg-black max-lg:justify-center max-lg:items-center ${open === true ? 'max-lg:w-[100%] max-lg:h-[100%]' : ''}`}>
                     {HEADER_LIST.map((item , index) => (
                       <a onClick={handleClose} className={`text-white leading-110 text-custom-sm relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-300 max-lg:opacity-0 transition-all duration-300 hover:after:w-full ${open === true ? 'max-lg:opacity-100' : ''}`} href={item.path} key={index}>{item.name}</a>
                     ))}
@@ -67,7 +68,7 @@ import { SearchIcon } from '../utils/icons'
                     <SearchIcon/>
                   </button>
                 </form>
-                <form className={`max-w-[257px] w-full fixed z-20 -top-1/2 left-1/2 -translate-x-1/2 !opacity-100 -translate-y-1/2  border-white max-h-[31px] items-center flex border mt-11 mb-custom-3 pr-3.5 border-solid rounded-custom-1 transition-all duration-300 ${search === true ? 'top-0' : ''}`}>
+                <form className={`max-w-[257px] w-full fixed z-[51] -top-1/2 left-1/2 -translate-x-1/2 !opacity-100 -translate-y-1/2  border-white max-h-[31px] items-center flex border mt-11 mb-custom-3 pr-3.5 border-solid rounded-custom-1 transition-all duration-300 ${search === true ? 'top-0' : ''}`}>
                   <input placeholder='Search by Keyword' required className='bg-transparent text-white py-2 px-3.5 placeholder:text-white outline-none w-[90%] ' type="text"  />
                   <button onClick={offSearch} className='search-icon transition-all duration-300' type='submit'>
                     <SearchIcon/>
