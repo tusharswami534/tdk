@@ -34,7 +34,8 @@ import { SearchIcon } from '../utils/icons'
       }
 
       return (
-        <div className='bg-tory-blue relative'>
+        <div className='bg-tory-blue'>
+        <div className='max-w-[1440px] mx-auto relative'>
             <div className="w-full bg-congress-blue">
               <img className='max-w-[1009px] w-full mx-auto max-lg:hidden' src="./assets/images/webp/header-top-layer.webp" alt="top layer" />
               </div>
@@ -72,6 +73,7 @@ import { SearchIcon } from '../utils/icons'
                 </form>
                 <div onClick={offSearch} className={`fixed top-0 left-0 w-full h-full bg-black z-10 opacity-80 transition-all duration-300 ${search === true ? '' : 'hidden'}`}></div>
               </div>
+        </div>
         </div>
       )
     }
