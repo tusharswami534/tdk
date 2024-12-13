@@ -34,17 +34,19 @@ import { SearchIcon } from '../utils/icons'
       }
 
       return (
-        <div className='bg-tory-blue'>
+        <div className='bg-tory-blue w-full'>
+             <div className='bg-congress-blue'>
+              <img className='max-w-[1009px] w-full mx-auto max-lg:hidden' src="./assets/images/webp/header-top-layer.webp" alt="top layer" />
+              </div>
         <div className='max-w-[1440px] mx-auto relative'>
             <div className="w-full bg-congress-blue">
-              <img className='max-w-[1009px] w-full mx-auto max-lg:hidden' src="./assets/images/webp/header-top-layer.webp" alt="top layer" />
               </div>
               <div className={`flex justify-between max-w-[1183px] max-xl:px-7 max-lg:pt-3 max-lg:pb-2.5 max-lg:items-center max-md:px-4 mr-custom-8 max-lg:mr-0 ml-auto`}>
                 <a href="/" className='text-white max-lg:flex hidden leading-110 text-custom-sm'>
                 <img className='max-w-[80px] max-sm:max-h-[20px]' src="./assets/images/webp/logo.webp" alt="logo" />
                 </a>
                 <div onClick={handleOpen} className=' text-white  hidden max-lg:flex flex-col justify-center items-center'>
-                <div  className=' gap-1 relative z-10 overflow-hidden cursor-pointer  size-4 flex-col'>
+                <div  className=' gap-1 relative z-10 overflow-hidden cursor-pointer flex size-4 flex-col'>
                     <div className={`flex w-4 h-0.5 bg-white transition-all duration-300 ${open === true ? 'translate-x-10' : ''}`}></div>
                     <div className={`flex w-4 h-0.5 bg-white relative after:absolute after:w-4 after:h-0.5 after:bg-white after:top-0 after:transition-all after:duration-300 after:left-0 transition-all duration-300   ${open === true ? 'rotate-45 after:rotate-90' : ''}`}></div>
                     <div className={`flex w-4 h-0.5 bg-white transition-all duration-300 ${open === true ? '-translate-x-10' : ''}`}></div>
